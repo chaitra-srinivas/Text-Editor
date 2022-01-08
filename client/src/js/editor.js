@@ -1,6 +1,6 @@
 // Import methods to save and get data from the indexedDB database in './database.js'
 import { getDb, putDb } from './database';
-import { header } from './header';
+import {header } from './header';
 
 export default class {
   constructor() {
@@ -26,7 +26,10 @@ export default class {
     // Fall back to localStorage if nothing is stored in indexeddb, and if neither is available, set the value to header.
     getDb().then((data) => {
       console.info('Loaded data from IndexedDB, injecting into editor');
+     // console.log(JSON.parse(data));
       this.editor.setValue(data || localData || header);
+     //data.map((item)=>item.content).forEach((v)=>this.editor.setValue(v));
+
     });
 
     this.editor.on('change', () => {

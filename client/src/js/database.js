@@ -13,6 +13,7 @@ const initdb = async () =>
   });
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
+
 export const putDb = async (content) => {
   console.log("Add and update content to the database");
 
@@ -28,9 +29,15 @@ export const putDb = async (content) => {
 
   const store = tx.objectStore("jate");
 
+  const objects = await store.getAll();
+
+  const contentToWrite =
+    objects.length > 0
+      ? { content: content, id: objects[0].id }
+      : { content: content };
   // .add() method adds data to the database
 
-  const request = await store.add(content);
+  const request = await store.put(contentToWrite);
 
   // Gets confirmation of the request
 
@@ -60,8 +67,14 @@ export const getDb = async () => {
   // Get confirmation of the request
 
   const result = await request;
-  console.log("result.value", result);
-  return result;
+  if (result.length > 0) {
+    console.log("result.value", result);
+    console.log(result[0].content);
+    return result[0].content;
+  } else {
+    return null;
+  }
+  
 };
 
 initdb();
