@@ -1,4 +1,4 @@
-# Text-Editor ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+# [Text Editor](https://sleepy-beach-16739.herokuapp.com/) ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Overview
 
@@ -53,7 +53,6 @@ THEN I should have proper build scripts for a webpack application
 - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
-- [Walkthrough video](#walkthrough-video)
 - [Questions](#questions)
 - [License](#license)
 
