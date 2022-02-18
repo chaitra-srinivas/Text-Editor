@@ -2,8 +2,7 @@
 
 ## Overview
 
-Text Editor is a single page web application that runs in the browser and meets the PWA criteria. The application is installable and can function offline. This application is built using JavaScript, Express.js. IndexedDB is used for data persistance on the client side. 
-
+Text Editor is a single page web application that runs in the browser and meets the PWA criteria. The application is installable and can function offline. This application is built using JavaScript, Express.js. IndexedDB is used for data persistance on the client side.
 
 ## User Story
 
@@ -53,6 +52,7 @@ THEN I should have proper build scripts for a webpack application
 - [Installation](#installation)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
+- [Deployed Application](#deployed-application)
 - [Questions](#questions)
 - [License](#license)
 
@@ -61,7 +61,7 @@ THEN I should have proper build scripts for a webpack application
   - Clone repository.
   - Should have access to Visual Studio
   - Run npm install to install packages/dependencies (Express, Codemirror).
-  - Run npm start from the root to build and start the     server
+  - Run npm start from the root to build and start the server
 
   ## Usage
 
@@ -74,12 +74,16 @@ THEN I should have proper build scripts for a webpack application
   ![Service Workers](/images/ServiceWorkers.png)
 
   ![IndexedDB](/images/IndexedDB.png)
- 
-   ## Questions
+
+  ## Deployed Application
+
+  [Text Editor](https://sleepy-beach-16739.herokuapp.com/)
+
+  ## Questions
 
   For any questions regarding the project please visit my
   GitHub Profile @
-  [chaitra-srinivas](https://github.com/dfdfgfd)
+  [chaitra-srinivas](https://github.com/chaitra-srinivas)
   or you can reach me @ cmurthy.dev@gmail.com
 
   ## License
